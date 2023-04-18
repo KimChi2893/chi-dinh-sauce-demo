@@ -19,4 +19,19 @@
             <class name="tests.Login_Logout_Apply_Data_Driven"/>
         </classes>
     </test>
+
+    <test name="Run on EDGE browser">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="tests.Login_Logout_Apply_Data_Driven"/>
+        </classes>
+    </test>
+
+    <test name="Run on SAFARI browser">
+        <parameter name="browser" value="safari"/>
+        <classes>
+            <class name="tests.Login_Logout_Apply_Data_Driven"/>
+        </classes>
+    </test>
+
 </suite>
