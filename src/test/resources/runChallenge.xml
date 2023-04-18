@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Sauce Demo">
+    <listeners>
+        <listener class-name="commons.MethodListener"/>
+        <listener class-name="reportConfig.AllureTestListener"/>
+    </listeners>
+    <parameter name="url" value="https://www.saucedemo.com/"/>
+
+    <test name="Run on CHROME browser">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.Login_Logout_Apply_Data_Driven"/>
+        </classes>
+    </test>
+
+    <test name="Run on FIREFOX browser">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.Login_Logout_Apply_Data_Driven"/>
+        </classes>
+    </test>
+</suite>
